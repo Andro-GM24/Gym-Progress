@@ -10,4 +10,5 @@ the  project is a software to save the progress( in the reps and weights in the 
 </p>
 <h3>
 M.E.R.</h3>
+
 ![alt text](images/gym_progress_mer.drawio.png)
