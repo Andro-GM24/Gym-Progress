@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>
 GYM-PROGRESS
 </h1>
@@ -12,3 +13,6 @@ the  project is a software to save the progress( in the reps and weights in the 
 M.E.R.</h3>
 
 ![alt text](images/gym_progress_mer.drawio.png)
+=======
+# Gym-Progress
+>>>>>>> main
