@@ -10,4 +10,4 @@ the  project is a software to save the progress( in the reps and weights in the 
 </p>
 <h3>
 M.E.R.</h3>
-![alt text](https://github.com/Andro-GM24/Project-Analysis-System/blob/master/images/teoria%20de%20la%20información.drawio.png?raw=true)
+![alt text](https://github.com/Andro-GM24/Gym-Progress/blob/master/images/gym_progress_mer.drawio.png)
