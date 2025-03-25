@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>gym progress</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+<p>Please fill out this form with the required information</p>
+<!--aca usamos el endpoint para hacer el metodo-->
+<form method="post" th:action="@{/registrar}" th:object="${users}">
+    <fieldset>
+        <label for="first-name">Enter Your First Name:</label>
+        <input id="first-name" th:field="*{name}" type="text" required />
+    
+        <label for="nick-name">Enter Your Nickname:</label>
+        <input id="nick-name" th:field="*{nickname}" type="text" />
+    
+        <label for="email">Enter Your Email:</label>
+        <input id="email" th:field="*{email}" type="email" required />
+    
+        <label for="new-password">Create a New Password:</label>
+        <input id="new-password" th:field="*{password}" type="text" required />
+    </fieldset>
+    
+    <fieldset>
+      <legend>porpuse type (required)</legend>
+      <label for="gain-weight"><input id="gain-weight" type="radio" th:field="*{porpuse}" value=1 checked /> Personal</label>
+      <label for="lose-weight"><input id="lose-weight" type="radio" th:field="*{porpuse}" value=2 /> Business</label>
+    </fieldset>
+    <fieldset>
+      
+      <label for="age">Input your age (years): <input id="age" type="number" th:field="*{age}" min="18" max="100" /></label>
+      <label for="weight">Input your weight (kilos): <input id="weight" type="number" th:field="*{weight}" min="20" max="150" /></label>
+      <label for="height">Input your height (centemeters): <input id="height" type="number" th:field="*{height}" min="100" max="220" /></label>
+      
+      
+      
+    </fieldset>
+    <label for="terms-and-conditions">
+      <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+    </label>
+    <input type="submit" value="Submit" />
+  </form>
+<input type="submit" value="Ingresar" />
+
+
+
+</body>
+</html>
