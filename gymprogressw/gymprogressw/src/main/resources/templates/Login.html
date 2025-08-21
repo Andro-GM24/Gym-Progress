@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Ingrese su usuario</h1>
+
+    <form method="post" th:action="@{/ingresar}" th:object="${users}">
+
+        <label for="email">Enter Your Email:</label>
+        <input id="email" th:field="*{email}" type="email" required />
+        <label for="new-password">Create a New Password:</label>
+        <input id="new-password" th:field="*{password}" type="text" required />
+
+        <input type="submit" value="ingresar" />
+    </form>
+
+</body>
+</html>

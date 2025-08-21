@@ -39,10 +39,18 @@ public class UsersController {
         repositoriousuario.insertar(usuario);
 
 
-        return "index";
+        return "redirect:/Login";
 
 
 
+
+    }
+    @PostMapping("/ingresar")
+    public String ingresar(@ModelAttribute("users")  users usuario, Model modelo ){
+
+     //repositoriousuario.verificar();
+
+        return "redirect:/principal";
     }
 
 

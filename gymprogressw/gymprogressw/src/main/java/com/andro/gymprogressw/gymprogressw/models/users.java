@@ -1,9 +1,9 @@
 package com.andro.gymprogressw.gymprogressw.models;
 
 public class users {
-    private String id, name, nickname, porpuse;
+    private String id, name, nickname ;
     private String password, email;
-    private int age, weight, height;
+    private int age, weight, height,porpuse;
 
     /* constructor
     public users(String id, String name, String nickname, String porpuse, String password, String email, int age, int weight, int height) {
@@ -43,11 +43,11 @@ public class users {
         this.nickname = nickname;
     }
 
-    public String getPorpuse() {
+    public int getPorpuse() {
         return porpuse;
     }
 
-    public void setPorpuse(String porpuse) {
+    public void setPorpuse(int porpuse) {
         this.porpuse = porpuse;
     }
 
